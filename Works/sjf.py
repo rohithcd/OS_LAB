@@ -33,6 +33,7 @@ BURSTTIME=mylist[0]['completiontime']
 while x<=total:
     li=[]
     flag=0
+    print(queue)
     if queue[0]['arrivaltime']>BURSTTIME:
         BURSTTIME=queue[0]['bursttime']+queue[0]['arrivaltime']
         flag=1
